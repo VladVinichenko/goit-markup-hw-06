@@ -59,7 +59,7 @@
 <!--HERO-->
         <section class=hero>
             <div class="container">
-            <h1 class="hero-title animate__fadeInUp">Эффективные решения для вашего бизнеса</h1>
+            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
             <button type="button" data-modal-open class="hero-button">Заказать услугу</button>
             </div>
 
@@ -426,7 +426,7 @@
 
 
         <div class="footer-container-box-social">
-            <h3 class=footer-text-social>Присоединяйтесь</h3>
+            <p class=footer-text-social>Присоединяйтесь</p>
             <ul class="social-list-footer list flex">
                 <li class="social-list-item">
                     <a href="" class="social-list-item-link social-list-item-link-footer link">
@@ -466,10 +466,33 @@
                 </li>
             </ul>
         </div>
+        <form class="footer-container-box-subscribe" action="#" method="GET">
+            <p class="subscribe-title">
+                Подпишитесь на рассылку
+            </p>
+            <div class="subscribe-box">
+                <div class="subscribe-form-box">
+<input type="email" name="user-email" class="subscribe-form-input" placeholder="E-mail">
+
+                </div>
+                <div class="subscribe-btn-box">
+<button class="s-btn" type="submit">
+<p class="subscribe-btn-text">Подписаться</p>
+                        <svg class="s-btn-icon" width="24" height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg>
+<div class="subscribe-btn-ico"></div>
+</button>
+
+                </div>
+            </div>
+        </form>
 
     </div>
 </footer>
 
+
+<!--MODAL-->
 <div class="backdrop is-hidden" data-modal>
 <div class="modal">
     <button type="button" data-modal-close class="modal-close-btn button">
@@ -477,6 +500,74 @@
             <use href="./images/sprite.svg#icon-close_modal"></use>
         </svg>
     </button>
+
+    <p class="modal-title">
+        Оставьте свои данные, мы вам перезвоним
+    </p>
+    <form action="#" class="modal-form">
+
+
+<label class="modal-form-field">
+<p class="modal-form-subtitle">
+    Имя
+</p>
+
+<span class="modal-form-input-wrapper">
+<input type="text" name="user-name" class="modal-form-input" minlength="2" required>
+<svg class="modal-form-input-icon">
+    <use href="./images/icons.svg#icon-person"></use>
+</svg>
+</span>
+
+
+</label>
+
+<label class="modal-form-field">
+<p class="modal-form-subtitle">
+    Телефон
+</p>
+<span class="modal-form-input-wrapper">
+    <input type="tel" name="user-tel" class="modal-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-111-11-11"> 
+    <svg class="modal-form-input-icon">
+        <use href="./images/icons.svg#icon-phone"></use>
+    </svg>
+</span>
+</label>
+<label class="modal-form-field">
+<p class="modal-form-subtitle">
+    Почта
+</p>
+<span class="modal-form-input-wrapper">
+    <input type="email" name="user-email" class="modal-form-input" required>
+    <svg class="modal-form-input-icon">
+        <use href="./images/icons.svg#icon-email"></use>
+    </svg>
+</span>
+</label>
+
+<label class="modal-form-field">
+<p class="modal-form-subtitle">
+    Комментарий
+</p>
+<textarea name="user-comment" id="" class="modal-user-comment" placeholder="Введите текст"></textarea>
+</label>
+
+<div class="our-license-check-box">
+<input type="checkbox" class="our-license-check visually-hidden" name="license-check" value="accept-license" id="user-accept-license" required>
+<label for="user-accept-license" class="user-accept-license">Соглашаюсь с рассылкой и принимаю <a href="" class="our-license-check-link link">Условия договора</a>
+
+</label>
+
+
+</div>
+                <div class="send-btn-box">
+                    <button class="s-btn" type="submit">
+                        <p class="send-btn-text">Отправить</p>
+                        <div class="send-btn-ico"></div>
+                    </button>
+                
+                </div>
+    </form>
 </div>
 </div>
 
