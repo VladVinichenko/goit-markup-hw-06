@@ -308,7 +308,6 @@ address {
   background-color: var(--background-colour);
   padding-top: 60px;
   padding-bottom: 60px;
-  /*padding-left: 215px;*/
 }
 
 .address-footer {
@@ -347,6 +346,10 @@ address {
   font-weight: 700;
 }
 
+.footer-container-form {
+  margin-left: auto;
+}
+
 .footer-container {
   display: flex;
   align-items: baseline;
@@ -356,8 +359,8 @@ address {
   margin-right: 70px;
 }
 
-.footer-container-box-social {
-  margin-right: 93px;
+.footer-container-box-subscribe {
+  display: flex;
 }
 
 .subscribe-title {
@@ -382,11 +385,17 @@ address {
   align-items: center;
   background-color: transparent;
   width: 358px;
-  margin-right: 12px;
   transition: border var(--anim-d) var(--anim-t);
   cursor: pointer;
-
   color: rgba(255, 255, 255, 0.6);
+}
+
+.subscribe-btn-icon {
+  margin-left: 10px;
+}
+
+.subscribe-btn {
+  margin-left: 12px;
 }
 
 .subscribe-form-input:focus {
@@ -401,7 +410,7 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 */
-.subscribe-btn-text {
+.subscribe-btn {
   font-size: var(--seconary-font-size);
   line-height: 1.88;
   display: flex;
@@ -409,7 +418,6 @@ address {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--dark-text-colour);
-  margin-right: 10px;
 }
 
 .subscribe-box {
@@ -668,16 +676,17 @@ address {
   border: 1px solid var(--tripple-colour);
   box-sizing: border-box;
   border-radius: 4px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  transition: border var(--anim-d) var(--anim-t);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
 }
-
+/*
 .clients-list {
   justify-content: center;
 }
+*/
 
 .clients-svg {
   height: 60px;
@@ -705,6 +714,7 @@ address {
 .clients-list {
   margin-left: var(--primary-margin-reverse);
   margin-top: var(--primary-margin-reverse);
+  align-items: center;
 }
 
 /*========== END CLIENTS ==========*/
@@ -904,6 +914,7 @@ address {
 .modal-close-btn:focus .modal-close-svg {
   fill: var(--focus-colour);
 }
+/*_______________HIDDEN MODAL_________________*/
 /*
 .is-hidden {
   opacity: 0;
@@ -911,12 +922,11 @@ address {
   pointer-events: none;
 }
 */
-
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
-
+/*_______________END HIDDEN MODAL_________________*/
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0.8);
 }
@@ -929,16 +939,16 @@ address {
   margin-bottom: 12px;
   font-weight: 700;
 }
-
+/*
 .modal-form-subtitle {
-  margin-bottom: 4px;
+  margin-bottom: 15px;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
   color: var(--seconary-colour);
   width: 100%;
 }
-
+*/
 .modal-form-input,
 .modal-user-comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -953,17 +963,32 @@ address {
   font-size: 12px;
   line-height: 1.67;
   letter-spacing: 0.01em;
+  margin-top: 4px;
 }
 
 .modal-form-input-wrapper {
   position: relative;
-  margin-bottom: 10px;
   display: block;
+}
+
+.modal-form-field,
+.modal-form-comment {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--seconary-colour);
+}
+
+.modal-form-field {
+  margin-bottom: 10px;
+}
+
+.modal-form-comment {
+  margin-bottom: 20px;
 }
 
 .modal-form-input-icon {
   fill: var(--main-colour);
-  margin-right: 12px;
   left: 12px;
   top: 50%;
   position: absolute;
@@ -976,8 +1001,7 @@ address {
 .modal-user-comment {
   resize: none;
   height: 120px;
-  padding-left: 12px;
-  margin-bottom: 20px;
+  padding: 12px 16px;
 }
 
 .modal-form-input::placeholder,
@@ -1083,7 +1107,7 @@ address {
 
 .our-license-check:focus + .user-accept-license::before {
   /*box-shadow: 0px 4px 4px var(--focus-colour);*/
-  background-color: var(--seconary-colour);
+  outline: 2px solid var(--focus-colour);
 }
 
 .our-license-check {

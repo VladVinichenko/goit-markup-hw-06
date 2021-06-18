@@ -466,26 +466,22 @@
                 </li>
             </ul>
         </div>
-        <form class="footer-container-box-subscribe" action="#" method="GET">
+
+
+        <form class="footer-container-form" action="#" method="GET">
             <p class="subscribe-title">
                 Подпишитесь на рассылку
             </p>
-            <div class="subscribe-box">
-                <div class="subscribe-form-box">
+            <div class="footer-container-box-subscribe">
 <input type="email" name="user-email" class="subscribe-form-input" placeholder="E-mail">
 
-                </div>
-                <div class="subscribe-btn-box">
-<button class="s-btn" type="submit">
-<p class="subscribe-btn-text">Подписаться</p>
-                        <svg class="s-btn-icon" width="24" height="24">
-                            <use href="./images/icons.svg#icon-icon-send"></use>
-                        </svg>
-<div class="subscribe-btn-ico"></div>
+<button class="s-btn subscribe-btn" type="submit">Подписаться<svg class="s-btn-icon subscribe-btn-icon" width="24" height="24">
+        <use href="./images/icons.svg#icon-icon-send"></use>
+    </svg>
 </button>
 
-                </div>
-            </div>
+
+</div>
         </form>
 
     </div>
@@ -508,24 +504,20 @@
 
 
 <label class="modal-form-field">
-<p class="modal-form-subtitle">
     Имя
-</p>
-
-<span class="modal-form-input-wrapper">
+    <span class="modal-form-input-wrapper">
 <input type="text" name="user-name" class="modal-form-input" minlength="2" required>
 <svg class="modal-form-input-icon">
     <use href="./images/icons.svg#icon-person"></use>
 </svg>
 </span>
-
-
 </label>
 
+
+
+
 <label class="modal-form-field">
-<p class="modal-form-subtitle">
     Телефон
-</p>
 <span class="modal-form-input-wrapper">
     <input type="tel" name="user-tel" class="modal-form-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="099-111-11-11"> 
     <svg class="modal-form-input-icon">
@@ -534,9 +526,7 @@
 </span>
 </label>
 <label class="modal-form-field">
-<p class="modal-form-subtitle">
     Почта
-</p>
 <span class="modal-form-input-wrapper">
     <input type="email" name="user-email" class="modal-form-input" required>
     <svg class="modal-form-input-icon">
@@ -545,11 +535,9 @@
 </span>
 </label>
 
-<label class="modal-form-field">
-<p class="modal-form-subtitle">
+<label class="modal-form-comment">
     Комментарий
-</p>
-<textarea name="user-comment" id="" class="modal-user-comment" placeholder="Введите текст"></textarea>
+<textarea name="user-comment" class="modal-user-comment" placeholder="Введите текст"></textarea>
 </label>
 
 <div class="our-license-check-box">
@@ -561,9 +549,8 @@
 
 </div>
                 <div class="send-btn-box">
-                    <button class="s-btn" type="submit">
-                        <p class="send-btn-text">Отправить</p>
-                        <div class="send-btn-ico"></div>
+                    <button class="s-btn send-btn-text" type="submit">
+                       Отправить
                     </button>
                 
                 </div>
