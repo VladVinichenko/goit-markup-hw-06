@@ -274,7 +274,7 @@ address {
 }
 
 .contact-header-svg {
-  height: 12px;
+  /* height: 16px;*/
   fill: var(--seconary-colour);
   margin-right: 10px;
   display: flex;
@@ -288,15 +288,15 @@ address {
   display: flex;
   align-items: center;
 }
-
+/*
 .mail-svg {
-  width: 16px;
+  width: 12px;
 }
 
 .tel-svg {
   width: 10px;
 }
-
+*/
 .menu-contact:hover .contact-header-svg,
 .menu-contact:focus .contact-header-svg {
   fill: var(--focus-colour);
@@ -520,12 +520,14 @@ address {
   display: flex;
   justify-content: center;
   align-items: center;
-
+  /*
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 100px;
   padding-right: 100px;
-
+  */
+  width: 270px;
+  height: 120px;
   background-color: var(--button-background-colour);
   border-radius: 4px;
 
